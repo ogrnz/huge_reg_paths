@@ -1,6 +1,6 @@
 # Regularization paths for huge package
 
-Convenience function to plot the regularization paths of huge glasso estimated objects in R.
+Convenience function to plot the regularization paths of High-Dimensional Undirected Graph Estimated (`huge`) objects in R.
 
 Please refer to the original package documentation on CRAN for additional information: https://cran.r-project.org/package=huge.
 
@@ -17,7 +17,7 @@ source("path/to/reg_paths.R")
 ``` 
 
 ## Usage
-If you plan on saving generated plots, do not forget to change the `FIG_PATH` constant of the desired folder at the beginning of the function.
+If you plan on saving generated plots, do not forget to change the `FIG_PATH` constant of the desired *existing* folder at the beginning of the function.
 When saving, you must pass a list of the following form: `save = c(str: "filename", int: dim_x, int: dim_y)`. See example `3`.
 
 If there are too many paths, you can only take a proportion of `float: n_sample` of them as an argument. When doing so, a list of the randomly selected ids from the precision matrix elements is returned. You can pass it as the `list[numeric]: idx` argument to the next path function to plot only those elements for comparison. See example `5`. 
